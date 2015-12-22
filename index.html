@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pd">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pipedrive test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+
+    </div>
+</header>
+<div class="main-container">
+    <div class="body" ng-controller="SidebarController">
+        <div class="sidebar">
+            <div ng-repeat="item in contacts">
+                <div class="contact_element wggradient" ng-click="setDetails(item)">
+                    <div class="pername">{{item.first_name}} {{item.last_name}}</div>
+                    <div class="orgname">{{item.org_name}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <span ng-bind="detail.name" class="detail-name"></span>
+
+            <div class="details boxshadow" ng-if="detail.name">
+
+
+                <div class="detail-items">
+                    <table>
+                        <tr ng-repeat="(key, value) in detail.vals">
+                            <td class="detail-key">{{key}}</td>
+                            <td class="detail-val">{{value}}</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="deal-items">
+                    <table class="boxshadow" ng-if="deals.length >0">
+                        <thead>
+
+                        <tr class="thgradient">
+                            <th>Title</th>
+                            <th>Sum</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in deals">
+                            <td>{{item.title}}</td>
+                            <td>{{item.sum}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/services.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

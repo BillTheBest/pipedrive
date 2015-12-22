@@ -1,0 +1,160 @@
+@font-face {font-family: 'Museo-700';
+    src: url('../fonts/2FFBAF_0_0.eot');
+    src: url('../fonts/2FFBAF_0_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2FFBAF_0_0.woff2') format('woff2'),
+    url('../fonts/2FFBAF_0_0.woff') format('woff'),
+    url('../fonts/2FFBAF_0_0.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+    height: 100%;
+}
+body{
+    position: relative;
+    height: 100%;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.main-container{
+position: relative;
+    height: 100%;
+}
+
+header{
+    background-color: #343434;
+    height:45px;
+    color: #fff;
+    margin: 0;
+}
+.body{
+    background: url('../img/maingb.png');
+    height: 100%;
+}
+.row {
+
+}
+.sidebar{
+    padding: 0;
+    background-color: #fff;
+    width: 271px;
+    height: 100%;
+    float: left;
+}
+.pername{
+    font-family:  "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.orgname{
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 12pt;
+}
+.content{
+    float: left;
+}
+.detail-name{
+    display: block;
+    margin: 15px 20px;
+    font-family: Museo-700, sans-serif;
+    font-size: 24pt;
+}
+.details{
+    background-color: #fff;
+    overflow: auto;
+    margin-left:15px;
+    padding: 15px;
+    border-radius: 3px;
+}
+.contact_element{
+    padding: 8px;
+    border-bottom: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+.detail-items{
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 12pt;
+    position: relative;
+    float: left;
+}
+
+
+.detail-key{
+    font-weight:bold;
+    padding-right: 50px;
+}
+
+.deal-items{
+    position: relative;
+    float: left;
+    margin-left: 140px;
+}
+.deal-items table{
+    font-family: "Lucida Grande", sans-serif;
+    font-weight: bold;
+    color: #525252;
+    border-radius: 5px;
+
+    border-collapse:separate;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius:5px;
+
+}
+.deal-items table tr{
+
+    height: 32px;
+}
+.deal-items table td{
+    border-top: 1px solid #aaaaaa;
+    padding: 0 15px;
+}
+.deal-items table th{
+    padding: 0 15px;
+}
+.deal-items table thead{
+    font-size: 11pt;
+}
+.deal-items table tbody{
+    font-size: 13pt;
+}
+
+
+.deal-items table tbody tr:nth-child(even){
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+0,eaeaea+100 */
+    background: #f3f3f3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f3f3f3 0%, #eaeaea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f3f3f3 0%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f3f3f3 0%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+}
+
+.wggradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f5f5f5+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+}
+.thgradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
+
+.boxshadow{
+    -webkit-box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 9px -3px rgba(0,0,0,0.75);
+}
